@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagit</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="themes.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="left">
+      <div class="top">
+        <label for="image-choose" class="btn choose-btn"> Choose image </label>
+        <input hidden type="file" id="image-choose" />
+        <button class="btn reset-btn">Reset</button>
+        <button class="btn download-btn">Download</button>
+      </div>
+      <div class="bottom">
+        <canvas>
+
+        </canvas>
+        <p class="placeholder">No File Choosen</p>
+      </div>
+    </div>
+    <div class="right">
+        <h1>Filters</h1>
+      <div class="filters">
+      </div>
+      <div class="presets">
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

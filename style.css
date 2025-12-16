@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-background-color);
+    color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: var(--padding-large);
+    gap: var(--gap-large);
+
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.left{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    flex-direction: column;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-large);
+    
+}
+
+.btn{
+    background-color: var(--active-background-color);
+    color: var(--text-color);
+    padding: var(--padding-medium);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-btn{
+    background-color: rgb(29, 71, 155);
+}
+.reset-btn{
+    background-color: rgb(155, 29, 29);
+}
+.download-btn{
+    background-color: rgb(12, 125, 27);
+}
+
+.bottom{
+    height: 80vh;
+    width: 100%;
+    background-color: var(--secondary-background-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.placeholder{
+    font-size: 4vh;
+    color: rgb(129, 129, 129);
+    font-weight: 400;
+}
+
+.right{
+    width: 30%;
+    height: 100%;
+    padding: var(--padding-large);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-large);
+    background-color: var(--secondary-background-color);
+    overflow-y: auto;
+    border-radius: 20px;
+}
+
+.right h1{
+    text-align: center;
+}
+
+.filters{
+    display: flex;
+    flex-direction:column;
+    gap: var(--gap-small);
+}   
+.filter{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--margin-medium);
+}  
+
+.presets{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas{
+    display: none;
+    max-height: 450px;
+    max-width: 800px;
+    aspect-ratio: auto;
+}

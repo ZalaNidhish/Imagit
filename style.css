@@ -13,6 +13,7 @@ body{
     padding: var(--padding-large);
     gap: var(--gap-large);
     flex-direction: column;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -22,7 +23,7 @@ body{
 
 .left{
     width: 100%;
-    height: 50vh;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,26 +67,41 @@ body{
 }
 
 .bottom{
-    height: 80vh;
+    height: 80%;
     width: 100%;
     background-color: var(--secondary-background-color);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
+
 .placeholder{
-    font-size: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
     color: rgb(129, 129, 129);
     font-weight: 400;
 }
 
+.placeholder p{
+    font-size: 3vh;
+}
+
+.placeholder img{
+    width: 15vh;
+    height: auto;
+    opacity: 0.5;
+}
+
 .right{
     width: 100%;
-    height: 100vh;
-    padding: var(--padding-large);
+    height: 100%;
+    /* padding: var(--padding-large); */
+    padding: 3vh;
     display: flex;
     flex-direction: column;
     gap: var(--gap-large);
@@ -138,7 +154,7 @@ canvas{
     }
     .right{
         width: 30%;
-        height: 100vh;
+        height: 100%;
     }
 }
 

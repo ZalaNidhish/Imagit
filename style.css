@@ -14,7 +14,7 @@ body{
     gap: var(--gap-large);
     flex-direction: column;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    
 }
 
 ::-webkit-scrollbar{
@@ -67,7 +67,7 @@ body{
 }
 
 .bottom{
-    height: 80%;
+    height: 80vh;
     width: 100%;
     background-color: var(--secondary-background-color);
     border-radius: 20px;
